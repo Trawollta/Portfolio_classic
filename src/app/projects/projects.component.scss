@@ -1,0 +1,176 @@
+.my-work-component {
+    background-color: #1E2D3D;
+    padding: 30px;
+}
+
+.header {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap:40px;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    width: 70%;
+    margin-top: 20px;
+
+    @media screen and (min-width: 900px) {
+        width: 40%;
+        align-items: flex-start; 
+        gap: 10px;
+    }
+}
+
+.project-scene {
+    position: relative;
+    width: 300px; /* Zentrieren für Bildschirme unter 900px */
+    
+    @media screen and (min-width: 900px) {
+        width: 397px;
+        height: 248px;
+    }
+}
+
+.project-screen {
+    position: absolute;
+    top: 13px;
+    left: 32px;
+    width: 229px;
+    height: 151px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (min-width: 900px) {
+        top: 17px;
+        left: 48px;
+        width: 295px;
+        height: 181px;
+    }
+}
+
+.project-screen-img {
+    width: 300px;
+    height: 200px;
+
+    @media screen and (min-width: 900px) {
+        width: 397px;
+        height: 248px;
+    }
+}
+
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 900px) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+}
+
+.project-class-left,
+.project-class-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 900px) {
+        gap: 250px;
+    }
+}
+
+.project-class-right {
+    @media screen and (min-width: 900px) {
+        flex-direction: row-reverse;
+        gap: 180px;
+    }
+}
+
+.project-name {
+    font-size: 23px;
+    font-weight: bold;
+    @media screen and (min-width: 900px) {
+    font-size: 45px;
+    }
+
+}
+
+.project-language {
+    font-size: 15px;
+    text-decoration: underline;
+    @media screen and (min-width: 900px) {
+        font-size: 25px;
+        }
+}
+
+.project-description {
+    font-size: 17px;
+    color: #607B96;
+    @media screen and (min-width: 900px) {
+        font-size: 23px;
+        }
+}
+
+.button-area {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.git,
+.live {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.git {
+    background-color: #3C9D93;
+    border: 1px solid transparent;
+}
+
+.live {
+    background-color: #FEA55F;
+    border: 1px solid #FEA55F;
+}
+
+.git:hover,
+.live:hover {
+    background-color: #2b7a6e;
+    border-color: #2b7a6e;
+    transform: scale(1.1);
+}
+
+.g-btn,
+.l-btn {
+    text-decoration: none;
+    color: white;
+}
+
+.rocketDisappear {
+    animation: shake 0.75s infinite linear;
+}

@@ -1,0 +1,21 @@
+.skill-set {
+    background-color: #1E2D3D;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    color: var(--White, #FFF);
+    font-size: 50px;
+    font-weight: bold;
+    @media screen and (min-width: 700px) {
+        font-size: 64px;
+}
+}
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    gap: 8px 16px;
+}

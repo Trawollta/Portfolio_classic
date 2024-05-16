@@ -1,0 +1,120 @@
+.navbar {
+    background-color: #1E2D3D;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none; 
+    border-left: none;
+    border-right: none; 
+    border-radius: 10px 10px 0 0; 
+    position: sticky;
+    z-index: 1000; 
+    top: 0;
+}
+
+.burgermenu {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 65px;
+    cursor: pointer;
+}
+
+.my-name {
+    padding: 20px;
+    color: #607B96;
+    font-family: 'Fira Code';
+    font-size: 16px;
+    cursor: pointer;
+    position: relative; /* Position für das Pseudoelement */
+
+    @media (min-width: 700px) {
+        font-size: 28px;
+    }
+
+    /* Pseudoelement für den Strich */
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%; /* Volle Breite */
+        height: 2px; /* Höhe des Strichs */
+        background-color: transparent; /* Hintergrundfarbe des Strichs */
+        transform: scaleX(0); /* Anfangs unsichtbar */
+        transition: transform 0.3s ease; /* Übergangseffekt */
+    }
+
+    /* Hover-Effekt für den Strich */
+    &:hover::after {
+        background-color: orange; /* Farbe des Strichs ändern */
+        transform: scaleX(1); /* Sichtbar machen */
+    }
+}
+
+
+.burgermenu:hover {
+    color: #FEA55F; 
+}
+
+.icon {
+    color: #607B96; 
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.navbar::after {
+    content: ""; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 1px;
+    background-color: #607B96;
+}
+
+.mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background:#1E2D3D;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.dektop700 {
+    display:flex;
+    justify-content: space-around;
+}
+
+.mobile-link {
+                font-family: 'montserrat';
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+                border: none;
+                cursor:pointer;
+                padding: 10px;
+                text-decoration: none;
+                color: white;
+                // margin-right: 40px;
+                
+}
+
+.desktop-menu-item {
+    @media (min-width: 700px) {
+        display: none;
+        display:flex;
+    }
+
+}

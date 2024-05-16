@@ -1,0 +1,250 @@
+@import './../../styles.scss';
+
+.w-90 {
+    background-color: #1E2D3D;
+    // padding: 40px;
+}
+
+.headline {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 46px;
+}
+
+.contactfield {
+  display:flex;
+  justify-content: center;
+
+}
+
+.name-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px; /* Abstand zwischen Beschriftung und Eingabefeld */
+}
+
+.contact-headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  color: white;
+  // @media (min-width:1024px) {
+  //   width: 100%;
+  // }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.darker-font {
+  color: #4D5BCE;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  @media (min-width:1024px) {
+  padding: 40px;
+  }
+}
+
+.description {
+  color: #43D9AD;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-content-container {
+  @media (min-width:1024px) {
+    display: flex;
+    align-items: flex-start;
+    gap: 13rem;
+  }
+
+  .contact-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+      font-weight: 400;
+      color:#607B96;
+
+      @media (min-width:1024px) {
+        font-size: 1.3rem;
+      }
+
+      span {
+        font-weight: 900;
+      }
+    }
+
+    @media (min-width:1024px) {
+      max-width: 40%;
+      margin-top: 31px;
+    }
+  }
+}
+
+.form-alpha-container {
+  @media (min-width:1024px) {
+    width: 100%;
+  }
+
+  .form-container {
+    .form-inner-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // align-items: flex-start; /* Align items to the start */
+
+      input,
+      textarea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 50px;
+        background: #011221;
+        border: 1px solid #607B96;
+        border-radius: 10px;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        width: 70%;
+        @media (min-width:1024px) {
+          width: 100%;
+        }
+
+
+        &::placeholder {
+          color: white;
+        }
+
+        &:hover {
+          border: 1px solid #00BEE8;
+        }
+      }
+
+      .warning {
+        height: 1.25rem;
+        font-size: 0.875rem;
+        color: #E61C40;
+      }
+
+      input {
+        &.ngtouched,
+        &.ng-dirty {
+          background-repeat: no-repeat;
+          background-position: 98%;
+
+          &.ng-invalid {
+            border: 1px solid #E61C40 !important;
+          }
+
+          &.ng-valid {
+            border: 1px solid #70E61C !important;
+          }
+        }
+
+        .error {
+          color: red;
+        }
+      }
+
+      textarea {
+        height: 10.5rem;
+        resize: vertical;
+
+        &.ngtouched,
+        &.ng-dirty {
+          background-repeat: no-repeat;
+          background-position: 98% 5%;
+
+          &.ng-invalid {
+            border: 1px solid #E61C40 !important;
+          }
+
+          &.ng-valid {
+            border: 1px solid #70E61C !important;
+          }
+        }
+      }
+    }
+
+    .button-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 30px;
+        text-decoration: none;
+        color: white;
+        font-family: 'Fira Code';
+        font-size: 14px;
+        line-height: 120%;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        margin-top: 10px;
+        border: none;
+        transition: all 125ms ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #C98BDF;;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+.success {
+  color: #70E61C;
+}
+
+.alert-text {
+  color: #E61C40 !important;
+}
+
+.checkBox {
+  width: 100%;
+  display: flex;
+  color: white;
+  font-size: 15px;
+}
+
+.inputCheckBox {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 10px;
+}
+
+.deactivated {
+  cursor: not-allowed !important;
+  background-color: grey !important;
+
+  &:hover {
+    background-color: grey !important;
+    transform: none !important;
+  }
+}
+
+.privacy {
+  color: #607B96;
+}
+
+.privacy a {
+  color: white; /* Ändere die Farbe des Links auf Weiß */
+}
